@@ -1,0 +1,457 @@
+﻿<div class="container-fluid" id="skills">  
+
+<div ng-include="'/template/nav.html'"></div> 
+
+
+
+<div style="float:left; margin-left: 7%;">
+
+	<div id="container1" style=" margin: 20px; width: 200px; height: 200px;position: relative;"></div>
+
+ 	<div id="container2" style="margin: 20px; width: 200px; height: 200px; position: relative;"></div>
+
+</div>
+
+<div style="float:left; margin-left: 16%;">
+
+	<div id="container3" style=" margin: 20px; width: 200px; height: 200px;position: relative;"></div>
+
+ 	<div id="container4" style="margin: 20px; width: 200px; height: 200px; position: relative;"></div>
+
+</div>
+
+<div style="float:right; margin-right: 13%;">
+
+	<div id="container5" style="margin: 20px; width: 200px; height: 200px; position: relative;"></div>
+
+	<div id="container6" style="margin: 20px; width: 200px; height: 200px; position: relative;"></div>
+
+</div>
+
+
+
+
+
+	<div class="container" style="margin-left:30%">
+
+  		<img src="/images/server.png" alt="Avatar" class="image" style="width:100%">
+
+  		<div class="middle">
+
+    		<div class="text"><b>Web/App Servers: Apache Tomcat 7/8, HTTP Web Server, SMTP, FTP</b></div>
+
+  		</div>
+
+  	</div>
+
+
+
+
+<div style="width:30%; float:right;margin-right: 6%;  margin-top: 8%;">
+
+    <div class="container">
+
+  		<img src="/images/cmsTool.png" alt="Avatar" class="image" style="width:100%">
+
+  		<div class="middle">
+
+    		<div class="text"><b>Content Management tools: Adode Publish, WordPress, Joomla, Drupal</b></div>
+
+  		</div>
+
+  	</div>  
+
+  	
+
+
+
+
+<div style="width:30%; float:left;  margin-left: 3%;  margin-top: 8%;">
+
+	<div class="container">
+
+  		<img src="/images/database.png" alt="Avatar" class="image" style="width:100%">
+
+  		<div class="middle">
+
+    		<div class="text"><b>Database: MYSQL, SQL SERVER</b></div>
+
+  		</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+
+
+
+var bar = new ProgressBar.Circle(container1, {
+
+  color: '#fff',
+
+  // This has to be the same size as the maximum width to prevent clipping
+
+  strokeWidth: 4,
+
+  trailWidth: 1,
+
+  easing: 'easeInOut',
+
+  duration: 1600,
+
+  text: {
+
+    autoStyleContainer: false
+
+  },
+
+  from: { color: '#fff', width: 2 },
+
+  to: { color: '#80bfff', width: 4 },
+
+  // Set default step function for all animate calls
+
+  step: function(state, circle) {
+
+    circle.path.setAttribute('stroke', state.color);
+
+    circle.path.setAttribute('stroke-width', state.width);
+
+
+
+    var value = Math.round(circle.value() * 100);
+
+    if (value === 0) {
+
+      circle.setText('');
+
+    } else {
+
+      circle.setText('HTML (HTML5)'+'</br>'+value + '%');
+
+    }
+
+  }
+
+});
+
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+
+bar.text.style.fontSize = '2rem';
+
+bar.animate(0.95);  // Number from 0.0 to 1.0
+
+
+
+
+
+var bar1 = new ProgressBar.Circle(container2, {
+
+  color: '#fff',
+
+  // This has to be the same size as the maximum width to prevent clipping
+
+  strokeWidth: 4,
+
+  trailWidth: 1,
+
+  easing: 'easeInOut',
+
+  duration: 1800,
+
+  text: {
+
+    autoStyleContainer: false
+
+  },
+
+  from: { color: '#fff', width: 2 },
+
+  to: { color: '#ff1a8c', width: 4 },
+
+  // Set default step function for all animate calls
+
+  step: function(state, circle) {
+
+    circle.path.setAttribute('stroke', state.color);
+
+    circle.path.setAttribute('stroke-width', state.width);
+
+
+
+    var value = Math.round(circle.value() * 100);
+
+    if (value === 0) {
+
+      circle.setText('');
+
+    } else {
+
+      circle.setText('JQuery'+'</br>'+value + '%');
+
+    }
+
+  }
+
+});
+
+bar1.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+
+bar1.text.style.fontSize = '2rem';
+
+bar1.animate(0.9);  // Number from 0.0 to 1.0
+
+
+
+
+
+var bar3 = new ProgressBar.Circle(container3, {
+
+  color: '#fff',
+
+  // This has to be the same size as the maximum width to prevent clipping
+
+  strokeWidth: 4,
+
+  trailWidth: 1,
+
+  easing: 'easeInOut',
+
+  duration: 2000,
+
+  text: {
+
+    autoStyleContainer: false
+
+  },
+
+  from: { color: '#fff', width: 2 },
+
+  to: { color: '#ff4d4d', width: 4 },
+
+  // Set default step function for all animate calls
+
+  step: function(state, circle) {
+
+    circle.path.setAttribute('stroke', state.color);
+
+    circle.path.setAttribute('stroke-width', state.width);
+
+
+
+    var value = Math.round(circle.value() * 100);
+
+    if (value === 0) {
+
+      circle.setText('');
+
+    } else {
+
+      circle.setText('CSS (CSS3)'+'</br>'+value + '%');
+
+    }
+
+  }
+
+});
+
+bar3.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+
+bar3.text.style.fontSize = '2rem';
+
+bar3.animate(0.95);  // Number from 0.0 to 1.0
+
+
+
+
+
+var bar4 = new ProgressBar.Circle(container4, {
+
+  color: '#fff',
+
+  // This has to be the same size as the maximum width to prevent clipping
+
+  strokeWidth: 4,
+
+  trailWidth: 1,
+
+  easing: 'easeInOut',
+
+  duration: 2200,
+
+  text: {
+
+    autoStyleContainer: false
+
+  },
+
+  from: { color: '#fff', width: 2 },
+
+  to: { color: '#ff8c1a', width: 4 },
+
+  // Set default step function for all animate calls
+
+  step: function(state, circle) {
+
+    circle.path.setAttribute('stroke', state.color);
+
+    circle.path.setAttribute('stroke-width', state.width);
+
+
+
+    var value = Math.round(circle.value() * 100);
+
+    if (value === 0) {
+
+      circle.setText('');
+
+    } else {
+
+      circle.setText('JavaScript'+'</br>'+value + '%');
+
+    }
+
+  }
+
+});
+
+bar4.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+
+bar4.text.style.fontSize = '2rem';
+
+bar4.animate(0.9);  // Number from 0.0 to 1.0
+
+
+
+
+
+var bar5 = new ProgressBar.Circle(container5, {
+
+  color: '#fff',
+
+  // This has to be the same size as the maximum width to prevent clipping
+
+  strokeWidth: 4,
+
+  trailWidth: 1,
+
+  easing: 'easeInOut',
+
+  duration: 2000,
+
+  text: {
+
+    autoStyleContainer: false
+
+  },
+
+  from: { color: '#fff', width: 2 },
+
+  to: { color: '#ffcc00', width: 4 },
+
+  // Set default step function for all animate calls
+
+  step: function(state, circle) {
+
+    circle.path.setAttribute('stroke', state.color);
+
+    circle.path.setAttribute('stroke-width', state.width);
+
+
+
+    var value = Math.round(circle.value() * 100);
+
+    if (value === 0) {
+
+      circle.setText('');
+
+    } else {
+
+      circle.setText('Bootstrap'+'</br>'+value + '%');
+
+    }
+
+  }
+
+});
+
+bar5.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+
+bar5.text.style.fontSize = '2rem';
+
+bar5.animate(0.95);  // Number from 0.0 to 1.0
+
+
+
+
+
+var bar6 = new ProgressBar.Circle(container6, {
+
+  color: '#fff',
+
+  // This has to be the same size as the maximum width to prevent clipping
+
+  strokeWidth: 4,
+
+  trailWidth: 1,
+
+  easing: 'easeInOut',
+
+  duration: 2000,
+
+  text: {
+
+    autoStyleContainer: false
+
+  },
+
+  from: { color: '#fff', width: 2 },
+
+  to: { color: '#53c653', width: 4 },
+
+  // Set default step function for all animate calls
+
+  step: function(state, circle) {
+
+    circle.path.setAttribute('stroke', state.color);
+
+    circle.path.setAttribute('stroke-width', state.width);
+
+
+
+    var value = Math.round(circle.value() * 100);
+
+    if (value === 0) {
+
+      circle.setText('');
+
+    } else {
+
+      circle.setText('Angular JS'+'</br>'+value + '%');
+
+    }
+
+
+
+  }
+
+});
+
+bar6.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+
+bar6.text.style.fontSize = '2rem';
+
+bar6.animate(0.85);  // Number from 0.0 to 1.0
+
+
+
+</script>
+
+</div>
+
+
+
+
+
