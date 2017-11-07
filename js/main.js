@@ -4,19 +4,19 @@ var myApp = angular.module("portfolioApp", ['ngRoute','ngAnimate']);
 
 myApp.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
-    .when("/home", {
-        templateUrl: '../template/home.html' 
+    .when('/home', {
+        templateUrl: '../template/home.html'
     })
-    .when("/about", {
+    .when('/about', {
         templateUrl: '../template/about.html'
     })
-     .when("/work", {
+     .when('/work', {
          templateUrl: '../template/work.html'
      })
-      .when("/skills", {
+      .when('/skills', {
           templateUrl: '../template/skills.html'
      })
-      .when("/contact", {
+      .when('/contact', {
           templateUrl: '../template/contact.html'
      })
 
@@ -27,10 +27,12 @@ myApp.config(['$routeProvider','$locationProvider', function ($routeProvider, $l
 }]);
 
 
-//   function menuCtrl($scope, $location) { 
+  // myApp.controller('menuCtrl', function($scope, $location){
 
-//     $scope.goTo = function (path) {
-//         $location.path(path);
-//     };
-// };
+  //   $scope.goTo = function (path) {
+  //       $location.path(path);
+  //   };
+
+  // });  
+
 
