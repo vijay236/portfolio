@@ -1,38 +1,30 @@
 
 
-var myApp = angular.module("portfolioApp", ['ngRoute','ngAnimate']);
+var myApp = angular.module('portfolioApp', ['ngRoute', 'ngAnimate']);
 
-myApp.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
+myApp.config(function ($routeProvider) {
     $routeProvider
-    .when('/home', {
-        templateUrl: '../template/home.html'
+    .when('/', {
+        templateUrl: './template/home.html' 
     })
     .when('/about', {
-        templateUrl: '../template/about.html'
+        templateUrl: './template/about.html'
     })
      .when('/work', {
-         templateUrl: '../template/work.html'
+         templateUrl: './template/work.html'
      })
       .when('/skills', {
-          templateUrl: '../template/skills.html'
+          templateUrl: './template/skills.html'
      })
       .when('/contact', {
-          templateUrl: '../template/contact.html'
+          templateUrl: './template/contact.html'
      })
 
    .otherwise({
-       redirectTo: '/home'
+       redirectTo: '/'
    });
-    $locationProvider.html5Mode(true);
-}]);
+});
 
 
-  // myApp.controller('menuCtrl', function($scope, $location){
-
-  //   $scope.goTo = function (path) {
-  //       $location.path(path);
-  //   };
-
-  // });  
-
+  
 
